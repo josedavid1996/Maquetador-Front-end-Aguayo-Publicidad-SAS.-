@@ -15,34 +15,158 @@
 <body>
 
   <header class="header">
-    <figure class="header__logo">
-      <img src="df" alt="">
-    </figure>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list__item"><a href="#">El programa</a></li>
-        <li class="nav__list__item"><a href="#">Inscripción</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <a href="index.html" class="header__logo">
+        <img src="assets/logo.svg" alt="logo">
+      </a>
+      <nav class="nav" id="menu">
+        <ul class="nav__list">
+          <li class="nav__list__item"><a href="#">El programa</a></li>
+          <li class="nav__list__item"><a href="#">Inscripción</a></li>
+        </ul>
+      </nav>
+
+      <ion-icon class="icon" id="icon" name="menu-outline"></ion-icon>
+
+    </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero__card">
         <h1 class="hero__title">Volamos para que tú puedas volar.</h1>
-        <h3 class="hero__subtitle">Avianca Corporate organiza todo lo que necesitas para tu viaje.</h3>
-        <button class="btn">Participa en la rifa</button>
+        <p class="hero__subtitle">Avianca Corporate organiza todo lo que necesitas para tu viaje.</p>
+        <button class="hero__btn btn">Participa en la rifa</button>
       </div>
     </section>
     <section class="form">
+      <h3 class="form__title">Busca tu vuelo</h3>
+      <form>
+        <div class="form__radios">
+          <div class="form__radio">
+            <label for="myRadioId" class="radio">
+              <input type="radio" name="myRadioField" id="myRadioId" class="radio__input" />
+              <div class="radio__visible"></div>
+            </label>
+            <span>Ida y Regreso</span>
+          </div>
+          <div class="form__radio">
+            <label for="myRadioId2" class="radio">
+              <input type="radio" name="myRadioField2" id="myRadioId2" class="radio__input" />
+              <div class="radio__visible"></div>
+            </label>
+            <span>Solo ida</span>
+
+          </div>
+          <div class="form__radio">
+            <label for="myRadioId3" class="radio">
+              <input type="radio" name="myRadioField3" id="myRadioId3" class="radio__input" />
+              <div class="radio__visible"></div>
+            </label>
+            <span>
+              Varias Ciudades
+            </span>
+          </div>
+        </div>
+
+        <!-- //////////////////////////////////////////////// -->
+        <div class="form__datos">
+          <div class="datos__destino">
+            <div class="inputs__group">
+              <label for="desde">
+                <span>Desde</span>
+                <input type="text" name="" id="desde" placeholder="Bogota D.C.(BOG)">
+              </label>
+            </div>
+            <img class="datos__img" src="assets/Arrow.png" alt="">
+            <div class="inputs__group">
+              <label for="desde">
+                <span>Destino</span>
+                <input type="text" name="" id="destino" placeholder="Dallas(DFW)">
+              </label>
+            </div>
+
+
+            <div class="inputs__group">
+              <label for="pasajero">
+                <span>Pasajeros y Clase</span>
+                <input type="text" name="" id="pasajero" placeholder="1 adulto, económica.">
+              </label>
+            </div>
+
+
+          </div>
+          <div class="datos__fechas">
+            <div class="inputs__group">
+              <label for="salida">
+                <span>Fecha de Salida</span>
+
+                <input type="text" name="" id="salida" placeholder="16/03/21">
+
+              </label>
+            </div>
+            <div class="inputs__group">
+              <label for="regreso">
+                <span>Fecha de Regreso</span>
+
+                <input type="text" name="" id="regreso" placeholder="14/04/21">
+
+              </label>
+            </div>
+
+            <a class="title__red"><span>
+                <ion-icon name="add-circle-outline"></ion-icon>
+              </span>Tengo un código promocional</a>
+          </div>
+
+        </div>
+
+        <a class="form__btn btn">Busca tu vuelo</a>
+      </form>
     </section>
-    <section class="recommendation">
+    <section class="recommendation container ">
       <h2>Recomendaciones para ti</h2>
-      <p class="parrafo__red"></p>
-      <!-- CARD1 -->
-      <div class="recommendation__card">
-        <figure class="card__img">
-          <img src="" alt="">
+      <a class="title__red title__red-small ">
+        Configura tus recomendaciones
+        <span>
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </span>
+      </a>
+      <!-- </div> -->
+      <div class="recommendation__cards">
+        <!-- CARD1 -->
+        <div class="recommendation__card">
+          <figure class="card__img">
+            <img src="assets/001.png" alt="Nueva York">
+          </figure>
+          <div class="card__group__text">
+            <div class="group__text__city">
+              <div class="card__group">
+                <h4>Bogotá</h4>
+                <span>BOG</span>
+              </div>
+              <i>icon</i>
+              <div class="card__group">
+                <h4>Nueva York</h4>
+                <span>JKF</span>
+              </div>
+            </div>
+            <div class="card__preci">
+              <p>Desde:</p>
+              <h3>$879, 890 <small>COP</small></h3>
+              <small>
+                <img src="assets/Vector.svg" alt="">
+                Directo | Jun. 12 - Jun. 24 | 12 días
+              </small>
+            </div>
+            <buttom class="card_btn">Buscar vuelos</buttom>
+          </div>
+        </div>
+        <!-- CARD2 -->
+        <!-- <div class="recommendation__card">
+          <figure class="card__img">
+            <img src="assets/002.png" alt="Sao pablo">
+          </figure>
           <div class="card__group__text">
             <div class="group__text__city">
               <h4>Bogotá</h4>
@@ -60,15 +184,15 @@
                 <i>icon</i>
                 Directo | Jun. 12 - Jun. 24 | 12 días
               </small>
-              <buttom class="btn">Buscar vuelos</buttom>
             </div>
           </div>
-        </figure>
-      </div>
-      <!-- CARD2 -->
-      <div class="recommendation__card">
-        <figure class="card__img">
-          <img src="" alt="">
+          <buttom class="btn">Buscar vuelos</buttom>
+        </div> -->
+        <!-- CARD3 -->
+        <!-- <div class="recommendation__card">
+          <figure class="card__img">
+            <img src="assets/001.png" alt="Nueva York">
+          </figure>
           <div class="card__group__text">
             <div class="group__text__city">
               <h4>Bogotá</h4>
@@ -86,67 +210,45 @@
                 <i>icon</i>
                 Directo | Jun. 12 - Jun. 24 | 12 días
               </small>
-              <buttom class="btn">Buscar vuelos</buttom>
             </div>
           </div>
-        </figure>
+          <buttom class="btn">Buscar vuelos</buttom>
+        </div> -->
       </div>
-      <!-- CARD3 -->
-      <div class="recommendation__card">
-        <figure class="card__img">
-          <img src="" alt="">
-          <div class="card__group__text">
-            <div class="group__text__city">
-              <h4>Bogotá</h4>
-              <span>BOG</span>
-            </div>
-            <i>icon</i>
-            <div class="group__text__city">
-              <h4>Nueva York</h4>
-              <span>JKF</span>
-            </div>
-            <div class="card__preci">
-              <p>Desde:</p>
-              <p>$879, 890 <span>COP</span></p>
-              <small>
-                <i>icon</i>
-                Directo | Jun. 12 - Jun. 24 | 12 días
-              </small>
-              <buttom class="btn">Buscar vuelos</buttom>
-            </div>
-          </div>
-        </figure>
-      </div>
+      <!-- </div> -->
     </section>
 
-    <section class="access">
+    <section class="access container">
       <h2>Accesos directos</h2>
-      <!-- CARD1 -->
-      <div class="access__card">
-        <div class="card__text__icon">
-          <span>icon</span>
-          <p>Conozca sobre el programa</p>
-          <p>Avianca Corporate ofrece beneficios y precios especiales para empresas con viajes frecuentes.</p>
-          <a>Más sobre el programa <span>icon</span></a>
+      <div class="acccess__cards">
+        <!-- CARD1 -->
+        <div class="access__card">
+          <div class="card__text__icon">
+            <h5><img src="assets/avion.svg" alt="avion">Conozca sobre el programa</h5>
+            <p>Avianca Corporate ofrece beneficios y precios especiales para empresas con viajes frecuentes.</p>
+            <a class="title__red title__red-small">Más sobre el programa <img src="assets/arrow-small.svg" alt=""
+                class="card__icon__arrow "></a>
+          </div>
         </div>
-      </div>
-      <!-- CARD2 -->
-      <div class="access__card">
-        <div class="card__text__icon">
-          <span>icon</span>
-          <p>Conozca sobre el programa</p>
-          <p>Avianca Corporate ofrece beneficios y precios especiales para empresas con viajes frecuentes.</p>
-          <a>Más sobre el programa <span>icon</span></a>
+        <!-- CARD2 -->
+        <div class="access__card">
+          <div class="card__text__icon">
+            <h5><img src="assets/lupa.svg" alt="busqueda">Cómo pertenecer al programa</h5>
+            <p>Conoce los requerimientos mínimos para que accedas a los beneficios que ofrece Avianca Corporate</p>
+            <a class="title__red title__red-small">Más sobre el programa <img src="assets/arrow-small.svg" alt=""
+                class="card__icon__arrow "></a>
+          </div>
         </div>
-      </div>
-      <!-- CARD3 -->
-      <div class="access__card">
-        <div class="card__text__icon">
-          <span>icon</span>
-          <p>Conozca sobre el programa</p>
-          <p>Avianca Corporate ofrece beneficios y precios especiales para empresas con viajes frecuentes.</p>
-          <a>Más sobre el programa <span>icon</span></a>
+        <!-- CARD3 -->
+        <div class="access__card">
+          <div class="card__text__icon">
+            <h5><img src="assets/start.svg" alt="start">Obtenga su contraseña web</h5>
+            <p>Si aún no recibe su contraseña, o la olvidó, la puede solicitar de nuevo aquí.</p>
+            <a class="title__red title__red-small">Más sobre el programa <img src="assets/arrow-small.svg" alt=""
+                class="card__icon__arrow "></a>
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -245,6 +347,10 @@
     </footer>
 
   </main>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
