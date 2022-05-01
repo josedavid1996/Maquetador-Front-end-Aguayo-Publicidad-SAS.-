@@ -25,6 +25,7 @@ html {
   font-size: 16px;
   color: var(--color-black);
 }
+/* General */
 a {
   font-weight: 700;
   font-size: 14px;
@@ -86,9 +87,13 @@ li {
   max-width: var(--max-width);
   margin: 0 auto;
 }
+
+/* Component */
+.arrow__icon__carrusel {
+}
+
 .btn {
   background: var(--bg-color-red);
-
   font-weight: 700;
   font-size: 14px;
   line-height: 30px;
@@ -98,8 +103,6 @@ li {
   border: 0 solid transparent;
   padding: 16px 48px;
 }
-/* Component */
-
 .icon {
   width: 30px;
   height: 30px;
@@ -141,7 +144,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
+  bottom: 70%;
   right: 0;
   background-color: var(--bg-color-red);
   display: flex;
@@ -183,23 +186,22 @@ nav {
 
 /* HERO */
 .hero {
-  position: relative;
   background-image: url("../assets/image-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 293px;
   color: var(--color-white);
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
 }
 .hero__card {
   width: 331px;
   height: 169px;
-  position: absolute;
   background-color: var(--color-opacity);
   padding: 1.125rem 1.625rem 0.9rem;
-  bottom: 1rem;
-  right: 1rem;
-  /* margin: 1rem; */
+  margin: 0 1rem 1rem 0;
 }
 .hero__subtitle {
   font-weight: 700;
@@ -269,7 +271,6 @@ nav {
   display: inline-flex;
   align-items: center;
   cursor: pointer;
-  /* margin-right: 10px; */
 }
 .radio__input {
   display: none;
@@ -372,7 +373,6 @@ nav {
   border-radius: 3px;
   border: 1px solid var(--color-border);
   position: relative;
-  /* background-color: aqua; */
 }
 .recommendation__card::after {
   content: url("../assets/arrow-left.svg");
@@ -391,8 +391,8 @@ nav {
   height: 29px;
   position: absolute;
   top: 7rem;
-  right: -2rem;
   cursor: pointer;
+  right: -2rem;
 }
 .card__img img {
   width: 100%;
