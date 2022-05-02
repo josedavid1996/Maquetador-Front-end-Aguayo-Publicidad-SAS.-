@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+  <!--///////////////////// 1.0 HEADER //////////////-->
   <header class="header">
     <div class="container">
       <a href="index.html" class="header__logo">
@@ -31,7 +31,13 @@
     </div>
   </header>
 
+  <!-- ///////////////////////////////////////// -->
+
+
+
   <main>
+
+    <!--//////////////////// 2.0 HERO /////////////-->
     <section class="hero">
       <div class="hero__card">
         <h1 class="hero__title">Volamos para que tú puedas volar.</h1>
@@ -39,6 +45,11 @@
         <button class="hero__btn btn">Participa en la rifa</button>
       </div>
     </section>
+
+    <!-- ///////////////////////////////////////// -->
+
+
+    <!--//////////////////// 3.0 FORM/////////////-->
     <section class="form">
       <h3 class="form__title">Busca tu vuelo</h3>
       <form>
@@ -68,8 +79,6 @@
             </span>
           </div>
         </div>
-
-        <!-- //////////////////////////////////////////////// -->
         <div class="form__datos">
           <div class="datos__destino">
             <div class="inputs__group">
@@ -124,6 +133,9 @@
         <a class="form__btn btn">Busca tu vuelo</a>
       </form>
     </section>
+    <!-- ///////////////////////////////////////// -->
+
+    <!--///////////////// RECOMENDACIONES/////// -->
     <section class="recommendation container ">
       <h2>Recomendaciones para ti</h2>
       <a class="title__red title__red-small ">
@@ -132,92 +144,100 @@
           <ion-icon name="chevron-down-outline"></ion-icon>
         </span>
       </a>
-      <!-- </div> -->
-      <div class="recommendation__cards">
-        <!-- CARD1 -->
-        <div class="recommendation__card">
-          <figure class="card__img">
-            <img src="assets/001.png" alt="Nueva York">
-          </figure>
-          <div class="card__group__text">
-            <div class="group__text__city">
-              <div class="card__group">
-                <h4>Bogotá</h4>
-                <span>BOG</span>
+      <div class="carrusel">
+        <div class="recommendation__cards">
+          <!-- CARD1 -->
+          <div class="recommendation__card">
+            <figure class="card__img">
+              <img src="assets/001.png" alt="Nueva York">
+            </figure>
+            <div class="card__group__text">
+              <div class="group__text__city">
+                <div class="card__group">
+                  <h4>Bogotá</h4>
+                  <span>BOG</span>
+                </div>
+                <img src="assets/group-arrow.svg" alt="group-arrow">
+                <div class="card__group">
+                  <h4>Nueva York</h4>
+                  <span>JKF</span>
+                </div>
               </div>
-              <i>icon</i>
-              <div class="card__group">
-                <h4>Nueva York</h4>
-                <span>JKF</span>
+              <div class="card__preci">
+                <p>Desde:</p>
+                <h3>$879, 890 <small>COP</small></h3>
+                <small>
+                  <img src="assets/Vector.svg" alt="">
+                  Directo | Jun. 12 - Jun. 24 | 12 días
+                </small>
               </div>
+              <buttom class="card_btn">Buscar vuelos</buttom>
             </div>
-            <div class="card__preci">
-              <p>Desde:</p>
-              <h3>$879, 890 <small>COP</small></h3>
-              <small>
-                <img src="assets/Vector.svg" alt="">
-                Directo | Jun. 12 - Jun. 24 | 12 días
-              </small>
+          </div>
+          <!-- CARD2 -->
+          <div class="recommendation__card">
+            <figure class="card__img">
+              <img src="assets/002.png" alt="Nueva York">
+            </figure>
+            <div class="card__group__text">
+              <div class="group__text__city">
+                <div class="card__group">
+                  <h4>Bogotá</h4>
+                  <span>BOG</span>
+                </div>
+                <img src="assets/group-arrow.svg" alt="group-arrow">
+                <div class="card__group">
+                  <h4>Sao Paulo</h4>
+                  <span>GRU</span>
+                </div>
+              </div>
+              <div class="card__preci">
+                <p>Desde:</p>
+                <h3>$929, 390 <small>COP</small></h3>
+                <small>
+                  <img src="assets/Vector.svg" alt="">
+                  Directo | Jun. 12 - Jun. 24 | 12 días
+                </small>
+              </div>
+              <buttom class="card_btn">Buscar vuelos</buttom>
             </div>
-            <buttom class="card_btn">Buscar vuelos</buttom>
+          </div>
+          <!-- CARD3 -->
+          <div class="recommendation__card">
+            <figure class="card__img">
+              <img src="assets/003.png" alt="Nueva York">
+            </figure>
+            <div class="card__group__text">
+              <div class="group__text__city">
+                <div class="card__group">
+                  <h4>Bogotá</h4>
+                  <span>BOG</span>
+                </div>
+                <img src="assets/group-arrow.svg" alt="group-arrow">
+                <div class="card__group">
+                  <h4>Santiago</h4>
+                  <span>SCL</span>
+                </div>
+              </div>
+              <div class="card__preci">
+                <p>Desde:</p>
+                <h3>$799, 490<small>COP</small></h3>
+                <small>
+                  <img src="assets/Vector.svg" alt="">
+                  Directo | Jun. 12 - Jun. 24 | 12 días
+                </small>
+              </div>
+              <buttom class="card_btn">Buscar vuelos</buttom>
+            </div>
           </div>
         </div>
-        <!-- CARD2 -->
-        <!-- <div class="recommendation__card">
-          <figure class="card__img">
-            <img src="assets/002.png" alt="Sao pablo">
-          </figure>
-          <div class="card__group__text">
-            <div class="group__text__city">
-              <h4>Bogotá</h4>
-              <span>BOG</span>
-            </div>
-            <i>icon</i>
-            <div class="group__text__city">
-              <h4>Nueva York</h4>
-              <span>JKF</span>
-            </div>
-            <div class="card__preci">
-              <p>Desde:</p>
-              <p>$879, 890 <span>COP</span></p>
-              <small>
-                <i>icon</i>
-                Directo | Jun. 12 - Jun. 24 | 12 días
-              </small>
-            </div>
-          </div>
-          <buttom class="btn">Buscar vuelos</buttom>
-        </div> -->
-        <!-- CARD3 -->
-        <!-- <div class="recommendation__card">
-          <figure class="card__img">
-            <img src="assets/001.png" alt="Nueva York">
-          </figure>
-          <div class="card__group__text">
-            <div class="group__text__city">
-              <h4>Bogotá</h4>
-              <span>BOG</span>
-            </div>
-            <i>icon</i>
-            <div class="group__text__city">
-              <h4>Nueva York</h4>
-              <span>JKF</span>
-            </div>
-            <div class="card__preci">
-              <p>Desde:</p>
-              <p>$879, 890 <span>COP</span></p>
-              <small>
-                <i>icon</i>
-                Directo | Jun. 12 - Jun. 24 | 12 días
-              </small>
-            </div>
-          </div>
-          <buttom class="btn">Buscar vuelos</buttom>
-        </div> -->
       </div>
-      <!-- </div> -->
+      <img class="recommendation__arrow__rigth " src="assets/arrow-rigth.svg" alt="arrow-right" id="right">
+      <img class="recommendation__arrow__left carrusel__arrow" src="assets/arrow-left.svg" alt="arrow-left" id="left">
     </section>
+    <!-- ///////////////////////////////////////// -->
 
+    <!-- //////////////ACCESOS ///////////////-->
     <section class="access container">
       <h2>Accesos directos</h2>
       <div class="acccess__cards">
@@ -251,8 +271,9 @@
 
       </div>
     </section>
+    <!-- ///////////////////////////////////////// -->
 
-    <!-- TEN ENCUENTA -->
+    <!--////////////// TEN ENCUENTA //////////-->
 
     <section class="encuenta container">
       <h2>Ten cuenta</h2>
@@ -286,6 +307,9 @@
 
       </div>
     </section>
+    <!-- ///////////////////////////////////////// -->
+
+    <!-- ///////////////////FOOTER//////////////// -->
     <footer class="footer container">
 
       <div class="group__links">
