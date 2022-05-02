@@ -1,6 +1,7 @@
 /* Custom Propety */
 :root {
   --bg-color-red: #da291c;
+  --bg-footer:#FAFAFA
   --color-red-black: #96172e;
   --color-opacity: #00000047;
   --color-black: #323237;
@@ -99,6 +100,17 @@ li {
   text-align: center;
   border: 0 solid transparent;
   padding: 16px 48px;
+}
+.btn__outline {
+  background: var(--color-white);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 30px;
+  color: var(--color-black);
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid var(--color-black);
+  padding: 8px 16px;
 }
 .icon {
   width: 30px;
@@ -243,7 +255,7 @@ nav {
 .form {
   max-width: 962px;
   min-width: 320px;
-  margin: 3rem 20px 54px;
+  margin: 3rem 20px 4rem;
   border: 1px solid var(--color-border);
   padding: 53px 30px;
 }
@@ -331,7 +343,7 @@ nav {
   margin-right: 8px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .form__datos {
     display: flex;
     flex-direction: column;
@@ -378,10 +390,10 @@ nav {
 }
 .recommendation__card {
   width: 294px;
-  height: 439px;
   border-radius: 3px;
   border: 1px solid var(--color-border);
   position: relative;
+  padding-bottom: 22px;
 }
 .recommendation__card::after {
   content: url("../assets/arrow-left.svg");
@@ -432,11 +444,11 @@ nav {
   margin-bottom: 1rem;
 }
 
-.card_btn {
-  margin-bottom: 24px;
-}
-
 /* ACCESS */
+.access {
+  padding-bottom: 18px;
+  margin-bottom: 62px;
+}
 
 .acccess__cards {
   padding: 0 37.5px;
@@ -444,8 +456,10 @@ nav {
   display: flex;
   flex-direction: column;
 }
+
 .access__card {
   margin-bottom: 48px;
+  flex: 1;
 }
 
 .card__text__icon h5 {
@@ -465,4 +479,158 @@ h5 > img {
 }
 .card__icon__arrow {
   margin-left: 15px;
+}
+@media screen and (min-width: 800px) {
+  .access {
+    padding-bottom: 32px;
+    margin-bottom: 88px;
+  }
+  .acccess__cards {
+    padding: 0;
+    flex-direction: row;
+  }
+  .access__card {
+    padding-right: 1.5rem;
+  }
+  .access__card:nth-child(1) p {
+    border-right: 1px solid var(--color-border);
+  }
+}
+
+/* TEN EN CUENTA */
+.encuenta {
+  margin-bottom: 92px;
+}
+.encuenta h2 {
+  margin-bottom: 56px;
+}
+.encuenta__cards {
+  display: flex;
+  flex-direction: column;
+}
+.encuenta__card {
+  margin: 0 20px 2rem;
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+}
+.encuenta__card h4,
+.encuenta__card p {
+  margin-bottom: 1rem;
+}
+
+.btn_encuenta {
+  padding: 8px 4px;
+}
+@media screen and (min-width: 900px) {
+  .encuenta__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .encuenta__card:nth-child(3) {
+    grid-column: 1 / span 2;
+  }
+  .btn_encuenta {
+    padding: 8px 16px;
+  }
+}
+/* FOOTER */
+.footer {
+  margin: 0 40px;
+  padding-top: 56px;
+  border-top: 1px solid var(--color-border);
+  background-color: var(--bg-footer);
+}
+.footer p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-gray);
+}
+.group__links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__links > h4,
+.group__siguenos > h4 {
+  color: var(--bg-color-red);
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 19px;
+}
+.footer__links > a {
+  color: var(--color-black);
+  display: block;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.redes {
+  display: flex;
+  margin-bottom: 24px;
+}
+.group__redes__icon {
+  display: flex;
+  margin-right: 32px;
+}
+.group__redes__icon img {
+  margin-right: 6px;
+}
+.group__redes__icon > p {
+  display: none;
+}
+
+.group__siguenos {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+ 
+}
+.group__logo__legales {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.group__data {
+  padding-top: 2rem;
+  margin-bottom: 17.75px;
+}
+.group__logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* @media screen and (min-width:600px) */
+
+@media  screen and (min-width: 600px){
+
+  .group__links{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+  
+  .group__logo__legales img{
+    margin-right: 3rem;
+
+  }
+  .group__redes__icon > p {
+  display: block;
+
+}
+
+.redes{
+  padding-right: 57px;
+    border-right: 1px solid var(--color-border);
+}
+  
+}
+@media screen and (min-width:800px){
+   .footer{
+    margin: 0 auto;
+  }
+.footer__siguenos{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
