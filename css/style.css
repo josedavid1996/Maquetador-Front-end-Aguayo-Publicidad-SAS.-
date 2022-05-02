@@ -99,7 +99,7 @@ li {
   border-radius: 5px;
   text-align: center;
   border: 0 solid transparent;
-  padding: 16px 48px;
+  padding: 12px 48px;
 }
 .btn__outline {
   background: var(--color-white);
@@ -117,13 +117,7 @@ li {
   overflow-x: hidden;
   justify-content: center;
 }
-/* .carrusel__arrow {
-  width: 16px;
-  height: 29px;
-  position: absolute;
-  top: 13rem;
-  cursor: pointer;
-} */
+
 .icon {
   width: 30px;
   height: 30px;
@@ -151,6 +145,7 @@ li {
   width: 100%;
   background-color: var(--bg-color-red);
   z-index: 999;
+  transition: all 0.5s ease;
 }
 .header > .container {
   max-width: var(--max-width);
@@ -217,6 +212,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: end;
+  transition: all 0.5s ease;
 }
 .hero__card {
   width: 331px;
@@ -238,7 +234,6 @@ nav {
     min-height: 470px;
     color: var(--color-white);
     align-items: center;
-    /* background-size: auto;  */
   }
   .hero__card {
     width: 488px;
@@ -270,6 +265,7 @@ nav {
   margin: 3rem 20px 4rem;
   border: 1px solid var(--color-border);
   padding: 53px 30px;
+  transition: all 0.5s ease;
 }
 .form__title {
   margin-bottom: 3rem;
@@ -334,7 +330,9 @@ nav {
   border: 0px solid transparent;
   border-bottom: 1px solid var(--color-black);
   padding: 8px 0 8px 16px;
+  outline: none;
 }
+
 .inputs__group label > input::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -356,6 +354,9 @@ nav {
 }
 
 @media screen and (min-width: 700px) {
+  .form {
+    position: relative;
+  }
   .form__datos {
     display: flex;
     flex-direction: column;
@@ -370,12 +371,18 @@ nav {
     justify-content: space-between;
     align-items: center;
   }
+  .form__btn {
+    position: absolute;
+    right: 50px;
+    bottom: 3rem;
+  }
 }
+
 @media screen and (min-width: 962px) {
   .form {
     margin: 0 auto;
     transform: translateY(-31px);
-    background-color: #fff;
+    background-color: var(--color-white);
   }
 }
 
@@ -389,6 +396,7 @@ nav {
   flex-direction: column;
   overflow-x: hidden;
   align-items: center;
+  transition: all 0.5s ease;
 }
 
 .recommendation h2 {
@@ -469,6 +477,7 @@ nav {
 .access {
   padding-bottom: 18px;
   margin-bottom: 62px;
+  transition: all 0.5s ease;
 }
 
 .acccess__cards {
@@ -521,6 +530,7 @@ h5 > img {
 /* TEN EN CUENTA */
 .encuenta {
   margin-bottom: 92px;
+  transition: all 0.5s ease;
 }
 .encuenta h2 {
   margin-bottom: 56px;
@@ -556,10 +566,11 @@ h5 > img {
 }
 /* FOOTER */
 .footer {
-  margin: 0 40px;
+  padding: 0 40px;
   padding-top: 56px;
   border-top: 1px solid var(--color-border);
   background-color: var(--bg-footer);
+  transition: all 0.5s ease;
 }
 .footer p {
   font-weight: 700;
@@ -570,7 +581,6 @@ h5 > img {
 .group__links {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .footer__links > h4,
 .group__siguenos > h4 {
